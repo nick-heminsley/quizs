@@ -1,3 +1,5 @@
+/* @theme quiz */
+
 @import "default";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,500;1,300&family=Source+Code+Pro:wght@300&display=swap");
 :root {
@@ -8,6 +10,7 @@
 }
 
 body {
+    position: relative;
     font-family: "Barlow", sans-serif !important;
 }
 
@@ -37,16 +40,6 @@ p {
 pre {
     background-color: var(--element);
     font-family: "Source Code Pro", monospace;
-}
-
-footer>img {
-    display: block;
-    margin: 1em;
-    width: 20%;
-    height: auto;
-    position: fixed;
-    right: 0;
-    bottom: 0;
 }
 
 p>img {
@@ -94,4 +87,9 @@ section {
 
 section[data-marpit-viewport] {
     transition: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
 }
